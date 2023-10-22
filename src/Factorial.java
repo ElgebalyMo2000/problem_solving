@@ -11,8 +11,11 @@ public class Factorial {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
-       System.out.println(factorial(x));
-
+        int fact = factorial(x);
+        if(fact %2 ==0)
+         System.out.println("YES");
+        else
+         System.out.println("NO");
        /*   Another Solution */
        System.out.println("/**********************    Another Solution  **********************/  ");
        int number  = scanner.nextInt();
@@ -21,7 +24,14 @@ public class Factorial {
             result = result*i;
        }
        System.out.println("factorial of "+number+" = "+result);
-        
+       /*   Another Solution */
+        System.out.println("/**********************    Another Solution2  **********************/  ");
+        long n  = scanner.nextLong();
+        if(n==1)
+          System.out.println("NO");
+        else
+          System.out.println("YES");
+
        
     }
    
